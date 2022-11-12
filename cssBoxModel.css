@@ -1,0 +1,35 @@
+/* CSS BOX Model */
+
+/* Explanation of the different parts:
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent */
+
+/* --------------------- Overflow --------------------*/
+/* 
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary 
+*/
+
+/* -------------- Calculate distances between elements --------------------*/
+/* IF 2 elements have HORIZONTAL MARGIN between these elements, margin will be added 
+1th element : margin right = 10px || 2th element : margin left = 10px
+MARGIN BETWEEN = 10px + 10px = 20px
+*/
+
+/* IF 2 elements have VERTICAL MARGIN between these elements, margin will not be added 
+1th element : margin bottom = 10px
+2th element : margin top = 20px
+MARGIN BETWEEN = 20px > 10px -> 20px
+*/
+
+/* ------------ box-sizeing ------------------------- */
+/* it allows us to include the padding and border in an element's total width and height. 
+for example: If box-sizeing: border-box -> width/height include CONTENT + PADDING + BORDER / without MARGIN 
+*/
+
+
+

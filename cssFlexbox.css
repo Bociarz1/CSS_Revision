@@ -1,0 +1,19 @@
+/* CSS Flex Container
+
+The FLEX CONTAINER properties are:
+flex-direction
+flex-wrap
+flex-flow - (flex-direction and flex-wrap)
+justify-content - is used to align the flex items (parallel to the axis)
+align-items - is used to align the flex items (perpendicular to the axis)
+align-content - using if there are 2 columns of item, similar to align-items (perpendicular to the axis)
+
+The FLES CHILD ITEMS properties are:
+order - specifies the order of the flex items.
+flex-grow - specifies how much a flex item will grow relative to the rest of free space of container.
+flex-shrink - specifies how much a flex item will shrink relative to the rest of the flex items.
+flex-basis - specifies the initial length of a flex item (parallel to the axis).
+flex - flex-grow, flex-shrink, and flex-basis properties.
+align-self - specifies the alignment for the selected item inside the flexible container.
+
+ */

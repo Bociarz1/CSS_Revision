@@ -1,0 +1,114 @@
+/* .sass / .scss
+
+IMPORTS -  directive allows you to include the content of one file in another.
+@import "variables"; @import "_variables.sass";
+all styles in files import to "style.sass";
+
+.sass syntax (using spacing / without ;  )
+body 
+  font-family: Helvetica, sans-serif
+  p 
+    font-size: 18px
+
+.scss syntax (using {} / using ;  )
+body {
+  font-family: Helvetica, sans-serif;
+  &:hover (body:hover) {
+    font-size: 18px;
+  }
+}
+
+VARIABLES IN SASS
+
+GLOBAL VARIABLES
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  $myFont: Helvetica, sans-serif; (SCOPE VARIABLE)
+  $myColor: red !global ; (GLOBAL VARAIBLE)
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+CSS VARAIBLES
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+body { background-color: var(--blue); }
+h2 { border-bottom: 2px solid var(--white); }
+
+-----@mixin / @include-----
+
+SCSS
+@mixin important-text($item1, $item2) {
+  color: $item1;
+  font-size: $item2;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+selector {
+  @include mixin-name(100px, 500px);
+  padding: 100px;
+}
+
+SASS
+= important-text($item1, $item2) 
+  color: $item1;
+  font-size: $item2;
+  font-weight: bold;
+  border: 1px solid blue;
+
+
+selector 
+  + mixin-name(100px, 500px);
+  padding: 100px;
+
+
+  EXTEND (using to not reapeat the code)
+
+  .button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}
+
+.button-submit  {
+  @extend .button-basic;
+  background-color: green;
+  color: white;
+}
+
+ ----> AFTER COMPILE --->
+
+ .button-basic, .button-report, .button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  background-color: red;
+}
+
+.button-submit  {
+  background-color: green;
+  color: white;
+}
+
+ */
+

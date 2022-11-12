@@ -1,0 +1,34 @@
+/* CSS units */
+
+/* 1. px */
+* {
+    padding: 10px;
+  }
+
+/* 2. em 
+Relative to the font-size of the PARRENT element (2em means 2 times the size of the current font)
+*/
+* {
+    padding: 10em;
+  }
+
+/* 3. rem
+Relative to font-size of the ROOT element
+*/
+* {
+    padding: 10rem;
+  }
+/* 4. % 
+Relative to the PARENT element
+*/
+* {
+  padding: 10%;
+}  
+
+/* 5. vw/vh 
+Relative to 1% of the width/height of the VIEWPORT*
+*/
+* {
+  padding: 10vw;
+  padding: 10vh;
+}  

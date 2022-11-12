@@ -1,0 +1,19 @@
+/* CSS Combinators */
+
+/* 
+1. (space)    :descendant selector (potomek)
+2.    >       :child selector (dziecko)
+3.    +       :adjacent sibling selector (pierwszy modszy brat)
+4.    ~       :general sibling selector (każdy młodszy brat)
+5.    *       : all
+ */
+
+ div, p, li {}
+  /*styling DIV and P and LI  */
+
+p.red.big {}
+/* element could has a few class  */
+/* <p class="red big"> */
+
+
+
